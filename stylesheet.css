@@ -1,0 +1,52 @@
+h1  {
+    
+    font-size: 1.25rem;
+    color: blue;
+    text-align: center;
+}
+
+p {
+    background: rgb(255,255,255);
+    color: black;
+}
+
+img {
+    margin-left: 25%;
+}
+
+#profilephoto {
+    margin-left: 5%;
+}
+
+
+body {
+    display: grid;
+    grid-template-columns: 300px, 300px, 300px, 300px;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "header header header header"
+    ". main main profile"
+    ". main main asidel"
+    "footer footer footer footer";
+}
+
+#sidebar-left {
+    grid-area: asidel;
+}
+
+header {
+    grid-area: header;
+}
+
+footer {
+    grid-area: footer;
+}
+
+main {
+    grid-area: main;
+}
+
+#profile {
+    grid-area: profile;
+    text-align: center;
+}
